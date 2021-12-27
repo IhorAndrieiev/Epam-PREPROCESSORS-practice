@@ -1,0 +1,221 @@
+// Write your styles here
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button-join($color) {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  color: white;
+  padding: 13px 34px;
+  background: $color;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@mixin links($size, $color) {
+  font-size: $size;
+  color: $color;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header_button {
+  @include button-join($btn-color);
+}
+
+.section_banner_button {
+  @include button-join($btn-color);
+}
+
+.login {
+  @include links($size: 20px, $color: white);
+  margin-left: 155px;
+}
+
+.section_link {
+  @include links($size: 15px, $color: #c0c3c4);
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+  background: $bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  p {
+    font-family: $logo-font;
+    color: $header-textcolor;
+    padding-left: 25px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  span {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.header {
+  background: $background;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 220px;
+  background-size: cover;
+  border-radius: 0 0 50% 0;
+  background-position: 0% 50%;
+  &_heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 500px;
+    line-height: 1;
+    margin-top: 40px;
+    color: $header-textcolor;
+    position: relative;
+    z-index: 1;
+  }
+  &_heading:after {
+    content: "";
+    background-color: $highlight-color;
+    width: 255px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  &_text {
+    color: $header-textcolor;
+    margin: 50px 0 100px;
+    white-space: pre-line;
+    font-family: $paragraphs-font;
+    font-size: large;
+  }
+}
+
+.section {
+  margin: auto;
+  width: 960px;
+  &_text {
+    text-align: center;
+    margin: 35px;
+    font-size: 35px;
+    color: $header-textcolor;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+  }
+  &_text:after {
+    content: "";
+    background-color: $highlight-color;
+    width: 155px;
+    height: 50px;
+    bottom: 0;
+    left: 51%;
+    position: absolute;
+    z-index: -1;
+  }
+  &_card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: $bg-blocs-color;
+    border-radius: 5px;
+    &_img {
+      width: 230px;
+      height: 200px;
+      border-radius: 8px;
+    }
+    &_right_container {
+      padding: 0 160px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .section_card_heading {
+        text-align: center;
+        font-size: 26px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        font-weight: 600;
+      }
+      .section_card_text {
+        font-family: $card-text;
+        color: #c0c3c4;
+        font-weight: 600;
+        text-align: justify;
+      }
+    }
+  }
+  .section_banner {
+    display: flex;
+    justify-content: space-around;
+    background: $footer-block-gradient;
+    border-radius: 5px;
+    transform: translate(0, 45%);
+    &_heading {
+      font-size: 26px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      margin-top: 25px;
+      margin-bottom: 3px;
+      color: $header-textcolor;
+      position: relative;
+      z-index: 1;
+    }
+    &_heading:after {
+      content: "";
+      background-color: $highlight-color;
+      width: 55px;
+      height: 50px;
+      bottom: 0;
+      left: 30%;
+      position: absolute;
+      z-index: -1;
+    }
+    &_text {
+      font-size: 14px;
+      color: #c0c3c4;
+      font-family: 'Source Sans Pro', sans-serif;
+      margin-bottom: 35px;
+    }
+    &_button {
+      align-self: center;
+      justify-self: end;
+    }
+  }
+}
+
+.footer {
+  background-color: $bg-blocs-color;
+  &-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 230px;
+    padding: 0 220px;
+    color: #c0c3c4;
+    font-family: $paragraphs-font;
+  }
+  &_logo p {
+    @extend .landing-logo;
+    display: inline-grid;
+    color: #c0c3c4;
+  }
+  &_text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,17 @@
+$colors: (
+        white: #FFF,
+        green: #739F29,
+        light-grey: #57a1c4,
+        dark-blue: #303039,
+        black-blue: #202531
+);
+$background: url("../img/m-h-day.jpg");
+$bg-color: map_get($colors, white);
+$btn-color: map_get($colors, green);
+$highlight-color: map_get($colors, light-grey);
+$header-textcolor: map_get($colors, dark-blue);
+$bg-blocs-color: map_get($colors, black-blue);
+$footer-block-gradient: linear-gradient(to left, #395dc8 18%, #709730 80%);
+$logo-font: 'Hind', sans-serif;
+$paragraphs-font: 'Source Sans Pro', sans-serif;
+$card-text: 'Source Sans Pro', sans-serif;

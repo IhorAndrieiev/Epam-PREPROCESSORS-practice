@@ -1,0 +1,17 @@
+$colors: (
+        black: #21242a,
+        orange: #dca70f,
+        tangerine: #ea582b,
+        white: #FFF,
+        dark-blue: #323a50
+);
+$background: url("../img/m-h-night.jpg");
+$bg-color: map_get($colors, black);
+$btn-color: map_get($colors, orange);
+$highlight-color: map_get($colors, tangerine);
+$header-textcolor: map_get($colors, white);
+$bg-blocs-color: map_get($colors, dark-blue);
+$footer-block-gradient: linear-gradient(to left, #ae2752 4%, #de862e 80%);
+$logo-font: 'Fresca', sans-serif;
+$paragraphs-font: 'Fresca', sans-serif;
+$card-text: 'Fresca', sans-serif;

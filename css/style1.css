@@ -1,0 +1,220 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header_button {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  color: white;
+  padding: 13px 34px;
+  background: #739F29;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.section_banner_button {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  color: white;
+  padding: 13px 34px;
+  background: #739F29;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.login {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 155px;
+}
+
+.section_link {
+  font-size: 15px;
+  color: #c0c3c4;
+  font-weight: lighter;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.6;
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-logo, .footer_logo p {
+  display: flex;
+  align-items: center;
+}
+.landing-logo p, .footer_logo p p {
+  font-family: "Hind", sans-serif;
+  color: #303039;
+  padding-left: 25px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.landing-logo span, .footer_logo p span {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background: url("../img/m-h-day.jpg");
+  height: 100vh;
+  width: 100%;
+  padding: 20px 220px;
+  background-size: cover;
+  border-radius: 0 0 50% 0;
+  background-position: 0% 50%;
+}
+.header_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 500px;
+  line-height: 1;
+  margin-top: 40px;
+  color: #303039;
+  position: relative;
+  z-index: 1;
+}
+.header_heading:after {
+  content: "";
+  background-color: #57a1c4;
+  width: 255px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.header_text {
+  color: #303039;
+  margin: 50px 0 100px;
+  white-space: pre-line;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: large;
+}
+
+.section {
+  margin: auto;
+  width: 960px;
+}
+.section_text {
+  text-align: center;
+  margin: 35px;
+  font-size: 35px;
+  color: #303039;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.section_text:after {
+  content: "";
+  background-color: #57a1c4;
+  width: 155px;
+  height: 50px;
+  bottom: 0;
+  left: 51%;
+  position: absolute;
+  z-index: -1;
+}
+.section_card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #202531;
+  border-radius: 5px;
+}
+.section_card_img {
+  width: 230px;
+  height: 200px;
+  border-radius: 8px;
+}
+.section_card_right_container {
+  padding: 0 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section_card_right_container .section_card_heading {
+  text-align: center;
+  font-size: 26px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.section_card_right_container .section_card_text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #c0c3c4;
+  font-weight: 600;
+  text-align: justify;
+}
+.section .section_banner {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to left, #395dc8 18%, #709730 80%);
+  border-radius: 5px;
+  transform: translate(0, 45%);
+}
+.section .section_banner_heading {
+  font-size: 26px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 3px;
+  color: #303039;
+  position: relative;
+  z-index: 1;
+}
+.section .section_banner_heading:after {
+  content: "";
+  background-color: #57a1c4;
+  width: 55px;
+  height: 50px;
+  bottom: 0;
+  left: 30%;
+  position: absolute;
+  z-index: -1;
+}
+.section .section_banner_text {
+  font-size: 14px;
+  color: #c0c3c4;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 35px;
+}
+.section .section_banner_button {
+  align-self: center;
+  justify-self: end;
+}
+
+.footer {
+  background-color: #202531;
+}
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 230px;
+  padding: 0 220px;
+  color: #c0c3c4;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.footer_logo p {
+  display: inline-grid;
+  color: #c0c3c4;
+}
+.footer_text {
+  font-size: 14px;
+  max-width: 300px;
+}
